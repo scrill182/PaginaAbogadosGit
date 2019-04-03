@@ -1,6 +1,6 @@
  <?php
 
-    $to = "samarazavala@outlook.com";
+    $to = "contcto@zaosabogados.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -16,7 +16,7 @@
     $subject = "You have a message from your Bitmap Photography.";
 
     $ZAOSAbogados_logo = 'img/ZAOSAbogados_logo.png';
-    $link = '#';
+    $link = 'zaosabogados.com';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";
