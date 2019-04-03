@@ -15,13 +15,13 @@
 
     $subject = "You have a message from your Bitmap Photography.";
 
-    $ZAOSAbogados_logo = 'img/ZAOSAbogados_logo.png';
+    $ZAOSAbogados_logo2 = 'img/ZAOSAbogados_logo2.png';
     $link = 'zaosabogados.com';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";
 	$body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
-	$body .= "<a href='{$link}'><img src='{$ZAOSAbogados_logo}' alt=''></a><br><br>";
+	$body .= "<a href='{$link}'><img src='{$ZAOSAbogados_logo2}' alt=''></a><br><br>";
 	$body .= "</td></tr></thead><tbody><tr>";
 	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
 	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
