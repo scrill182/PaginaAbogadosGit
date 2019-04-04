@@ -112,12 +112,36 @@
 		<div class="container">
 
 
-	<!--	<iframe src="https://www.google.com/maps/embed?pb=" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+	<!--	<iframe src="https://www.google.com/maps/embed?pb=" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>>
 
 			<div id="mapBox" class="mapBox" data-lat="19.416689" data-lon="-99.155404" data-zoom="13" data-info=" Frontera 167,Colonia Roma Norte, Delegación Cuauhtémoc, C.p. 04310, CDMX."
 			 data-mlat="40.701083" data-mlon="-74.1522848">
-			</div>
+			</div>  -->
+			<div id="map"></div>
+                          <script>
+                // Initialize and add the map
+                function initMap() {
+                  // The location of Uluru
+                  var dir = {lat: 19.416689, lng: -99.155404};
+                  // The map, centered at Uluru
+                  var map = new google.maps.Map(
+                      document.getElementById('map'), {zoom: 4, center: dir});
+                  // The marker, positioned at Uluru
+                  var marker = new google.maps.Marker({position: dir, map: map});
+                }
+                    </script>
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+                    </script>	
 
+        
+        
+        
+        
+        
+        
+        
+        
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="contact_info">
