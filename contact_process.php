@@ -1,6 +1,6 @@
  <?php
 
-    $to = "contcto@zaosabogados.com";
+    $to = "contacto@zaosabogados.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -13,15 +13,15 @@
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "You have a message from your Bitmap Photography.";
+    $subject = "Tienes un nuevo mensaje de un posible cliente ";
 
-    $ZAOSAbogados_logo2 = 'img/ZAOSAbogados_logo2.png';
-    $link = 'zaosabogados.com';
+    $ZAOSAbogados_logo2 = 'img/ZAOSabogados_logo2.png';
+    $link = 'www.zaosabogados.com';
 
-	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
+	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Correo Electrónico Express</title></head><body>";
 	$body .= "<table style='width: 100%;'>";
 	$body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
-	$body .= "<a href='{$link}'><img src='{$ZAOSAbogados_logo2}' alt=''></a><br><br>";
+	$body .= "<a href='{$link}'><img src='{$ZAOSabogados_logo2}' alt=''></a><br><br>";
 	$body .= "</td></tr></thead><tbody><tr>";
 	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
 	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
@@ -34,4 +34,15 @@
 
     $send = mail($to, $subject, $body, $headers);
 
+    if (!$send){
+        
+        $errorMessage= error_get_last()['message'];
+    }
+
+    echo "El mensaje fue enviado exitosamente ";
+
+  
+
+ 
+        
 ?>
