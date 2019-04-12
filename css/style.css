@@ -335,16 +335,16 @@ button:focus {
   z-index: 999999;
   transition: background 0.4s, all 0.3s linear; }
   .header_area .navbar {
-    background: transparent;
+    background: transparent ;
     padding: 0px;
     border: 0px;
     border-radius: 0px; }
     .header_area .navbar .nav .nav-item {
       margin-right: 45px; }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 600 12px/80px "Raleway", sans-serif;
+        font: 600 13px/80px "Raleway", sans-serif;
         text-transform: uppercase;
-        color: #222222;
+        color: black;
         padding: 0px;
         display: inline-block; }
         .header_area .navbar .nav .nav-item .nav-link:after {
@@ -358,6 +358,7 @@ button:focus {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
           border: none;
+            
           padding: 0px;
           border-radius: 0px;
           box-shadow: none;
@@ -436,12 +437,22 @@ button:focus {
       line-height: 60px;
       display: inline-block;
       color: #222222;
-      padding-left: 30px; }
+      padding:10px; }
       @media (max-width: 991px) {
         .header_area .navbar .search {
           color: #ffffff; } }
       .header_area .navbar .search i {
         font-weight: 600; }
+
+  .header_area .navbar .mainphone {
+        
+        font: 600 13px/80px "Raleway", sans-serif;
+        text-transform: uppercase;
+        color: black;
+        padding-left: 2px;
+        display: inline-block; }
+    
+      
   .header_area.navbar_fixed .main_menu {
     position: fixed;
     width: 100%;
@@ -564,7 +575,7 @@ button:focus {
     position: absolute; }
 
   .header_area .navbar {
-    background: #f13d80; }
+    background: coral; }
     .header_area .navbar .navbar-nav .social-icons {
       margin-top: 20px; }
 
